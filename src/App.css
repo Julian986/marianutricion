@@ -1,0 +1,223 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Animaciones para el carrusel de testimonios */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-25px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(25px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.carousel-item {
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+.carousel-container {
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+/* Efecto de hover suave para las flechas */
+.carousel-arrow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animaciones de scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animaciones específicas para diferentes elementos */
+#badge.animate-in {
+  animation: slideInFromTop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#title.animate-in {
+  animation: slideInFromLeft 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#description.animate-in {
+  animation: slideInFromLeft 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#cta-button.animate-in {
+  animation: slideInFromBottom 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#services-header.animate-in {
+  animation: fadeInUp 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#services-grid.animate-in {
+  animation: fadeInUp 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animaciones para FAQ */
+.faq-answer {
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.faq-answer.open {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 20px;
+}
+
+.faq-answer.closing {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Estilos para menú móvil */
+.mobile-menu {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hamburger-button:hover span {
+  background-color: #059669;
+}
+
+/* Prevenir scroll cuando el menú móvil está abierto */
+body.menu-open {
+  overflow: hidden;
+}
+
+

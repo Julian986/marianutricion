@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+    background: #f3fef6;
+  /*   background-image: url("../public/frutas\ secas\ fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8; */
+}
