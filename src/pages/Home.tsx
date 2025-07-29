@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import imageDePerfil from '../../public/imagen_de_perfil.jpg'
+
 
 const Home: React.FC = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
