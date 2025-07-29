@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import imageDePerfil from '../../public/imagen_de_perfil.jpg'
 
 const Home: React.FC = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
         <nav className="fixed top-0 left-0 w-screen flex items-center justify-between px-8 md:px-16 py-7 z-50" style={{ backgroundColor: '#f3fef6' }}>
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <span className="font-bold text-2xl text-gray-700 tracking-tight">María Nutrición</span>
+            <span className="font-bold text-2xl text-gray-700 tracking-tight">Maria Victoria Paravizini</span>
           </div>
           
           {/* Menú desktop */}
@@ -213,15 +213,15 @@ const Home: React.FC = () => {
           {/* Texto a la izquierda */}
           <div className="md:w-1/2 w-full flex flex-col items-start justify-center mb-12 md:mb-0">
             <span id="badge" className="animate-on-scroll bg-green-100 text-green-700 font-semibold px-4 py-2 rounded mb-6 text-sm tracking-wide hidden md:block">Lic. Maria Victoria Paravizini</span>
-            <h1 id="title" className="animate-on-scroll text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">Especialista en nutrición integral</h1>
-            <p id="description" className="animate-on-scroll text-lg text-gray-600 mb-8 max-w-xl">🌿 𝚃𝚎 𝚊𝚌𝚘𝚖p𝚊ñ𝚘 𝚊 𝚘𝚙𝚝𝚒𝚖𝚒𝚣𝚊𝚛 𝚝𝚞 𝚜𝚊𝚕𝚞𝚍 𝚊 𝚝𝚛𝚊𝚟é𝚜 𝚍𝚎 𝚕𝚊 𝚊𝚕𝚒𝚖𝚎𝚗𝚝𝚊𝚌𝚒ó𝚗 𝚌𝚘𝚗𝚜𝚌𝚒𝚎𝚗𝚝𝚎.
-            🌿 𝚂𝚘𝚕𝚒𝚌𝚒𝚝𝚊 tú 𝚝𝚞𝚛𝚗𝚘 👇</p>
+            <h1 id="title" className="animate-on-scroll text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">Nutrición Integral</h1>
+            <p id="description" className="animate-on-scroll text-lg text-gray-600 mb-8 max-w-xl"> 𝚃𝚎 𝚊𝚌𝚘𝚖p𝚊ñ𝚘 𝚊 𝚘𝚙𝚝𝚒𝚖𝚒𝚣𝚊𝚛 𝚝𝚞 𝚜𝚊𝚕𝚞𝚍 𝚊 𝚝𝚛𝚊𝚟é𝚜 𝚍𝚎 𝚕𝚊 𝚊𝚕𝚒𝚖𝚎𝚗𝚝𝚊𝚌𝚒ó𝚗 𝚌𝚘𝚗𝚜𝚌𝚒𝚎𝚗𝚝𝚎.
+              </p>
             <a href="https://wa.me/5492235121205" target="_blank" rel="noopener noreferrer">
               <button id="cta-button" className="animate-on-scroll bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold px-10 py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto transform hover:scale-105 cursor-pointer">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.63A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.68-.5-5.26-1.44l-.38-.22-3.69.97.99-3.59-.25-.37A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.47-7.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.5-.5-.67-.5-.17 0-.37-.02-.57-.02-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.9 1.23 3.1.15.2 2.13 3.25 5.17 4.42.72.25 1.28.4 1.72.52.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"/>
                 </svg>
-                Consulta gratuita
+                Solicitar turno
               </button>
             </a>
           </div>
@@ -230,7 +230,7 @@ const Home: React.FC = () => {
             {/* Imagen borrosa de fondo */}
             {/* <img src="/María imagen perfil.png" alt="Fondo borroso María" className="absolute z-0 w-[420px] h-[420px] md:w-[520px] md:h-[520px] object-cover blur-2xl scale-110 opacity-40" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', position: 'absolute' }} /> */}
             {/* Imagen nítida de María delante */}
-            <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753710668/Mar%C3%ADa_imagen_perfil_ufszbo.webp" alt="Nutricionista María" className="relative z-1 w-72 h-72 md:w-96 md:h-96 rounded-3xl object-cover shadow-md opacity-85" />
+            <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp" alt="Nutricionista María" className="relative z-1 w-72 h-72 md:w-96 md:h-96 rounded-3xl object-cover shadow-md opacity-85" />
           </div>
         </main>
 
