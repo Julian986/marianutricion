@@ -57,45 +57,42 @@ const Home: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Laura González",
-      title: "Paciente desde 2022",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711377/photo-1534528741775-53994a69daeb_tfeheq.webp",
-      testimonial: "Gracias a María logré cambiar mis hábitos y ahora me siento con más energía que nunca. Su enfoque personalizado hizo toda la diferencia."
+      name: "Daniela Kittlein",
+      title: "Hace 4 años",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913036/unnamed_f0qnfy.webp",
+      testimonial: "Excelente profesional. Vicky es la mejor nutri de mar del plata sin lugar a dudas."
     },
     {
       id: 2,
-      name: "Carlos Mendoza",
-      title: "Paciente desde 2023",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711316/photo-1507003211169-0a1dd7228f2d_wu0yay.webp",
-      testimonial: "El trato cercano y profesional de María hizo que el proceso fuera fácil y motivador. Bajé 15kg y me siento genial."
+      name: "Yanina Luengo",
+      title: "Hace 4 años",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913036/unnamed_1_lxxjs1.webp",
+      testimonial: "Excelente profesional.! Muy cálida, alcance grandes objetivos.!! La recomiendo 100%."
     },
     {
       id: 3,
-      name: "Ana Pérez",
-      title: "Paciente desde 2021",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711316/photo-1438761681033-6461ffad8d80_jtef54.webp",
+      name: "Candela Ara",
+      title: "",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913036/unnamed_2_joskwh.webp",
       testimonial: "María me ayudó a entender que la nutrición no es solo dieta, sino un estilo de vida. Ahora me siento más saludable y feliz."
     },
     {
       id: 4,
-      name: "Roberto Silva",
-      title: "Paciente desde 2020",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711316/photo-1472099645785-5658abf4ff4e_zakvw7.webp",
-      testimonial: "Después de años de intentar dietas sin éxito, María me dio las herramientas para un cambio real y sostenible."
+      name: "Selva Audine",
+      title: "Hace 4 años",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913035/unnamed_3_l3is10.webp",
     },
     {
       id: 5,
-      name: "Carmen Ruiz",
-      title: "Paciente desde 2023",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711317/photo-1544005313-94ddf0286df2_qicg9u.webp",
-      testimonial: "María no solo me ayudó con mi alimentación, sino que también mejoró mi relación con la comida. Me siento liberada."
+      name: "Oscar Paravizini",
+      title: "Hace 4 años",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913039/unnamed_4_ook4s3.webp",
     },
     {
       id: 6,
-      name: "Diego Morales",
-      title: "Paciente desde 2022",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711316/photo-1500648767791-00dcc994a43e_alwlur.webp",
-      testimonial: "Como deportista, necesitaba una nutrición específica. María me ayudó a optimizar mi rendimiento y recuperación."
+      name: "Florencia Paravizini",
+      title: "Hace 4 años",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913036/unnamed_5_kg1kid.webp",
     }
   ];
 
