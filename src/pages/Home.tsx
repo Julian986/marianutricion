@@ -422,7 +422,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Sección de Testimonios */}
-        <section className="py-20 bg-white md:rounded-none rounded-3xl mx-4 md:mx-0">
+        <section className="py-20 md:rounded-none rounded-3xl mx-4 md:mx-0">
           <div className="max-w-7xl mx-auto px-8">
             <div id="testimonials-header" className="animate-on-scroll text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Lo que dicen mis consultantes</h2>
