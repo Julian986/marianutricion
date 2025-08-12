@@ -22,7 +22,7 @@ const Home: React.FC = () => {
           }
         });
       },
-      { threshold: 0.2, rootMargin: '0px 0px -100px 0px' }
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     );
 
     // Observar todos los elementos con clase 'animate-on-scroll'

@@ -83,12 +83,12 @@
 }
 
 .carousel-item {
-  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform, opacity;
 }
 
 .carousel-container {
-  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform;
 }
 
@@ -106,7 +106,7 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .animate-on-scroll.animate-in {
@@ -116,27 +116,27 @@
 
 /* Animaciones específicas para diferentes elementos */
 #badge.animate-in {
-  animation: slideInFromTop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slideInFromTop 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #title.animate-in {
-  animation: slideInFromLeft 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slideInFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #description.animate-in {
-  animation: slideInFromLeft 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slideInFromLeft 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #cta-button.animate-in {
-  animation: slideInFromBottom 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slideInFromBottom 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #services-header.animate-in {
-  animation: fadeInUp 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: fadeInUp 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #services-grid.animate-in {
-  animation: fadeInUp 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes slideInFromTop {
