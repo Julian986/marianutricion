@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// Nota: para imágenes en public, usar rutas absolutas desde la raíz (e.g., "/consultas.png").
 
 
 const Home: React.FC = () => {
@@ -153,6 +154,9 @@ const Home: React.FC = () => {
     setMobileMenuOpen(false);
   };
 
+  // Alto fijo para contenedores de imágenes de servicios (ajustable en un solo lugar)
+  const serviceImageHeightPx = 250;
+
   return (
     <>
       {/* Contenido principal */}
@@ -178,7 +182,7 @@ const Home: React.FC = () => {
               <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4.5A1 1 0 013 3.5H6.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
               <span className="text-green-700 font-semibold text-sm">Turnos y Consultas</span>
             </div>
-            <span className="ml-2 font-bold text-lg text-gray-800">+4733378901</span>
+            <span className="ml-2 font-bold text-lg text-gray-800">223 512-1205</span>
           </div>
           
           {/* Botón hamburguesa móvil */}
@@ -238,7 +242,8 @@ const Home: React.FC = () => {
             <div id="services-header" className="animate-on-scroll text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Mis Servicios</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Te ofrezco un acompañamiento integral y personalizado para alcanzar tus objetivos de salud
+              Consulta presencial en la ciudad de Mar del Plata o Virtual para cualquier lugar del mundo. Abordaremos la nutricion con un enfoque integral del ser humano, haciendo hincapié en una alimentación en base a alimentos reales y de manera consciente. Encontraremos la alimentación que se adecue a vos, que cumpla con tus objetivos y que optimice tu biología
+              ¡Nos vemos en consulta!
               </p>
             </div>
 
@@ -246,9 +251,9 @@ const Home: React.FC = () => {
             <div id="services-grid" className="animate-on-scroll grid md:grid-cols-3 gap-8">
               {/* Servicio 1 - Planes Personalizados */}
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
-                <div className="aspect-w-16 aspect-h-9 relative overflow-hidden">
+                <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
                   <img 
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753710806/photo-1490645935967-10de6ba17061_z6zsfd.webp" 
+                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957715/consultas_bnfmty.webp" 
                     alt="Planes de nutrición personalizados" 
                     className="w-full h-full object-cover"
                   />
@@ -267,10 +272,10 @@ const Home: React.FC = () => {
                     <span className="text-gray-300">•</span>
                     <span className="text-sm text-gray-500">Personalizado</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Planes Personalizados</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Consultas uno a uno <br /> Presencial y virtual</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    Diseño planes de alimentación únicos adaptados a tu metabolismo, preferencias y objetivos específicos. 
-                    Incluye análisis completo y seguimiento semanal.
+                    Primera consulta con evaluación integral (historia clínica y hábitos), definición de objetivos y plan de
+                    alimentación personalizado. Seguimiento y ajustes periódicos, en modalidad presencial u online.
                   </p>
                   <div className="flex items-center justify-between">
                     {/* <span className="text-green-600 font-semibold text-sm">Desde $150/mes</span> */}
@@ -285,19 +290,25 @@ const Home: React.FC = () => {
               </article>
 
               {/* Servicio 2 - Consultas Online */}
-              <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
-                <div className="aspect-w-16 aspect-h-9 relative overflow-hidden">
+              <article
+                className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 cursor-pointer"
+                onClick={() => window.open('https://www.instagram.com/nutricionconsciente.ar?igshid=YmMyMTA2M2Y%3D', '_blank', 'noopener,noreferrer')}
+              >
+                <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
                   <img 
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753710804/photo-1515683359900-6922e4964be1_rxqqmj.webp" 
-                    alt="Consultas nutricionales online" 
+                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957717/frutas_secas_fondo_ovqyee.webp" 
+                    alt="Nutricion Consciente" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    <div className="bg-white/90 backdrop-blur-sm rounded-full flex items-center gap-2 px-3 py-1 shadow-sm">
+                      <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" />
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" />
+                        <circle cx="17" cy="7" r="1.2" fill="currentColor" />
                       </svg>
+                      <span className="text-sm font-medium text-gray-800">@nutricionconsciente.ar</span>
                     </div>
                   </div>
                 </div>
@@ -307,10 +318,10 @@ const Home: React.FC = () => {
                     <span className="text-gray-300">•</span>
                     <span className="text-sm text-gray-500">Flexible</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Consultas Online</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Nutricion Consciente</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    Atención profesional desde cualquier lugar del mundo. Consultas virtuales con tecnología de vanguardia 
-                    y la misma calidad que una consulta presencial.
+                    Visitá mi Instagram Nutrición Consciente para contenidos, tips, recetas y novedades. También podés
+                    reservar tu turno por mensaje directo.
                   </p>
                   <div className="flex items-center justify-between">
                     {/* <span className="text-blue-600 font-semibold text-sm">Desde $80/consulta</span> */}
@@ -326,10 +337,10 @@ const Home: React.FC = () => {
 
               {/* Servicio 3 - Educación Nutricional */}
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
-                <div className="aspect-w-16 aspect-h-9 relative overflow-hidden">
+                <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
                   <img 
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753710805/photo-1505576399279-565b52d4ac71_t9z7va.webp" 
-                    alt="Educación nutricional" 
+                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754956846/Plantes-medicinals_hoyaha.webp" 
+                    alt="Estelar - Blends de hierbas medicinales" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -347,10 +358,10 @@ const Home: React.FC = () => {
                     <span className="text-gray-300">•</span>
                     <span className="text-sm text-gray-500">Integral</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Educación Nutricional</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Estelar</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    Programa educativo integral que te empodera con conocimiento científico para tomar decisiones 
-                    alimentarias informadas y crear hábitos saludables permanentes.
+                    Blends de hierbas medicinales para infusionar, creados para acompañar tu bienestar de forma natural.
+                    Próximamente tienda online. Consultá por disponibilidad.
                   </p>
                   <div className="flex items-center justify-between">
                    {/*  <span className="text-purple-600 font-semibold text-sm">Desde $120/mes</span> */}
@@ -374,18 +385,18 @@ const Home: React.FC = () => {
               <div>
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre Mí</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Soy Licenciada en Nutrición con más de 8 años de experiencia ayudando a personas a transformar su vida a través de la alimentación consciente.
+                  Soy Licenciada en Nutrición con más de 10 años de experiencia ayudando a personas a transformar su vida a través de la alimentación consciente.
                 </p>
                 <p className="text-lg text-gray-600 mb-8">
                   Mi enfoque se basa en la ciencia de la nutrición combinada con un trato humano y empático. Creo que cada persona es única, por eso diseño planes personalizados que se adaptan a tu estilo de vida y objetivos.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-green-600 mb-2">500+</div>
+                    <div className="text-3xl font-bold text-green-600 mb-2">1000+</div>
                     <div className="text-gray-600">Pacientes atendidos</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-green-600 mb-2">8+</div>
+                    <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
                     <div className="text-gray-600">Años de experiencia</div>
                   </div>
                 </div>
@@ -539,7 +550,7 @@ const Home: React.FC = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">Reserva tu cita</h4>
-                        <p className="text-gray-600">+4733378901</p>
+                        <p className="text-gray-600">+5492235121205</p>
                       </div>
                     </div>
                     
@@ -788,7 +799,7 @@ const Home: React.FC = () => {
             <div>
               <h4 className="font-semibold mb-4">Contacto</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>WhatsApp: +4733378901</li>
+                <li>WhatsApp: +5492235121205</li>
                 <li>Email: maria@nutricion.com</li>
                 <li>Horarios: Lun-Vie 9-18hs</li>
               </ul>
@@ -801,7 +812,7 @@ const Home: React.FC = () => {
                     <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.63A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.68-.5-5.26-1.44l-.38-.22-3.69.97.99-3.59-.25-.37A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.47-7.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.5-.5-.67-.5-.17 0-.37-.02-.57-.02-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.9 1.23 3.1.15.2 2.13 3.25 5.17 4.42.72.25 1.28.4 1.72.52.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"/>
                   </svg>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
+                <a href="https://www.instagram.com/nutricionconsciente.ar?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                     <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" />
                     <circle cx="12" cy="12" r="5" stroke="currentColor" />
