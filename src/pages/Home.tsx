@@ -231,7 +231,7 @@ const Home: React.FC = () => {
             {/* Imagen borrosa de fondo */}
             {/* <img src="/María imagen perfil.png" alt="Fondo borroso María" className="absolute z-0 w-[420px] h-[420px] md:w-[520px] md:h-[520px] object-cover blur-2xl scale-110 opacity-40" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', position: 'absolute' }} /> */}
             {/* Imagen nítida de María delante */}
-            <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp" alt="Nutricionista María" className="relative z-1 w-72 h-72 md:w-96 md:h-96 rounded-3xl object-cover shadow-md opacity-85" />
+            <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp" alt="Nutricionista María" className="relative z-1 w-72 h-72 md:w-96 md:h-96 rounded-3xl object-cover shadow-md " />
           </div>
         </main>
 
@@ -272,7 +272,7 @@ const Home: React.FC = () => {
                     <span className="text-gray-300">•</span>
                     <span className="text-sm text-gray-500">Personalizado</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Consultas uno a uno <br /> Presencial y virtual</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Consultas 1:1 <br /> Presencial y virtual</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     Primera consulta con evaluación integral (historia clínica y hábitos), definición de objetivos y plan de
                     alimentación personalizado. Seguimiento y ajustes periódicos, en modalidad presencial u online.
@@ -539,9 +539,13 @@ const Home: React.FC = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900">Horarios de atención</h4>
-                        <p className="text-gray-600">Lunes a Viernes 9:00 - 18:00</p>
-                      </div>
+  <h4 className="font-semibold text-gray-900">Horarios de atención</h4>
+  <div className="flex flex-col gap-1 mt-2">
+    <span className="inline-flex items-center text-gray-700 rounded-full text-sm font-medium">Presencial: 10:00 - 16:00</span>
+    <span className="inline-flex items-center bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Virtual: A coordinar</span>
+  </div>
+</div>
+
                     </div>
                     
                     <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
@@ -626,7 +630,7 @@ const Home: React.FC = () => {
               <div className="border-b border-gray-200">
                 <button 
                   onClick={() => handleFaqToggle(1)}
-                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                 >
                   <span className="text-lg font-semibold text-gray-900">¿Cuánto tiempo toma ver resultados con la nutrición?</span>
                   <svg className={`w-8 h-8 text-black transition-transform duration-200 ${faqOpen === 1 ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -636,8 +640,7 @@ const Home: React.FC = () => {
                 <div className={`faq-answer ${faqOpen === 1 ? 'open' : closingFaq === 1 ? 'closing' : ''}`}>
                   <div className="pb-8 pr-12">
                     <p className="text-gray-600 leading-relaxed">
-                      Los resultados varían según cada persona y sus objetivos. Generalmente, los primeros cambios se notan en 2-4 semanas, 
-                      pero los resultados más significativos se ven en 2-3 meses con constancia. Cada plan es personalizado y adaptado a tu metabolismo y estilo de vida.
+                    Los tiempos varian según el proceso de cada ser humano, lo que te aseguro es que sosteniendo un cambio en el tiempo, armando una rutina posible para vos lograras materializar tus objetivos. Paciencia.
                     </p>
                   </div>
                 </div>
@@ -647,7 +650,7 @@ const Home: React.FC = () => {
               <div className="border-b border-gray-200">
                 <button 
                   onClick={() => handleFaqToggle(2)}
-                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                 >
                   <span className="text-lg font-semibold text-gray-900">¿Qué incluye la primera consulta?</span>
                   <svg className={`w-8 h-8 text-black transition-transform duration-200 ${faqOpen === 2 ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -657,9 +660,8 @@ const Home: React.FC = () => {
                 <div className={`faq-answer ${faqOpen === 2 ? 'open' : closingFaq === 2 ? 'closing' : ''}`}>
                   <div className="pb-8 pr-12">
                     <p className="text-gray-600 leading-relaxed">
-                      La primera consulta incluye una evaluación completa: historial médico, análisis de composición corporal, 
-                      evaluación de hábitos alimentarios, establecimiento de objetivos y creación de un plan nutricional personalizado. 
-                      También recibirás material educativo y seguimiento semanal.
+                      La primera consulta incluye una anamnesis nutricional, una entrevista en la cual nos conocemos y planteamos posibles objetivos a trabajar. Es el punto de partida.
+
                     </p>
                   </div>
                 </div>
@@ -669,7 +671,7 @@ const Home: React.FC = () => {
               <div className="border-b border-gray-200">
                 <button 
                   onClick={() => handleFaqToggle(3)}
-                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                 >
                   <span className="text-lg font-semibold text-gray-900">¿Trabajan con seguros médicos?</span>
                   <svg className={`w-8 h-8 text-black transition-transform duration-200 ${faqOpen === 3 ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -679,9 +681,8 @@ const Home: React.FC = () => {
                 <div className={`faq-answer ${faqOpen === 3 ? 'open' : closingFaq === 3 ? 'closing' : ''}`}>
                   <div className="pb-8 pr-12">
                     <p className="text-gray-600 leading-relaxed">
-                      Sí, trabajamos con la mayoría de las obras sociales y prepagas. Te ayudamos a verificar tu cobertura 
-                      y gestionar las autorizaciones necesarias. También ofrecemos planes de pago flexibles para que la nutrición 
-                      sea accesible para todos.
+                    No, no trabajamos con seguro medico (obras sociales y prepagas). La atención es modalidad particular. Consulta valores actuales.
+
                     </p>
                   </div>
                 </div>
@@ -691,7 +692,7 @@ const Home: React.FC = () => {
               <div className="border-b border-gray-200">
                 <button 
                   onClick={() => handleFaqToggle(4)}
-                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                 >
                   <span className="text-lg font-semibold text-gray-900">¿Puedo cancelar mi cita si no puedo asistir?</span>
                   <svg className={`w-8 h-8 text-black transition-transform duration-200 ${faqOpen === 4 ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -701,9 +702,8 @@ const Home: React.FC = () => {
                 <div className={`faq-answer ${faqOpen === 4 ? 'open' : closingFaq === 4 ? 'closing' : ''}`}>
                   <div className="pb-8 pr-12">
                     <p className="text-gray-600 leading-relaxed">
-                      Sí, puedes cancelar tu cita hasta 24 horas antes sin cargo. Para cancelaciones con menos tiempo, 
-                      te pedimos que nos contactes lo antes posible para poder reprogramar tu consulta. 
-                      Entendemos que pueden surgir imprevistos.
+                    Las consultas se pueden cancelar o reprogramar con 24 hs de anticipación de previo aviso, en el caso no contar con esa anticipación la consulta deberá ser abonada para continuar con el tratamiento.
+
                     </p>
                   </div>
                 </div>
@@ -713,7 +713,7 @@ const Home: React.FC = () => {
               <div className="border-b border-gray-200">
                 <button 
                   onClick={() => handleFaqToggle(5)}
-                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                 >
                   <span className="text-lg font-semibold text-gray-900">¿Ofrecen consultas online?</span>
                   <svg className={`w-8 h-8 text-black transition-transform duration-200 ${faqOpen === 5 ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -723,16 +723,14 @@ const Home: React.FC = () => {
                 <div className={`faq-answer ${faqOpen === 5 ? 'open' : closingFaq === 5 ? 'closing' : ''}`}>
                   <div className="pb-8 pr-12">
                     <p className="text-gray-600 leading-relaxed">
-                      Sí, ofrecemos consultas online a través de videollamadas seguras. Las consultas virtuales tienen la misma 
-                      calidad que las presenciales y te permiten acceder a nuestros servicios desde cualquier lugar. 
-                      Solo necesitas una conexión a internet estable.
+                    Las consultas virtuales se realizan a través de google meet, la modalidad de la misma es igual a la presencial donde en la primera se realiza una entrevista para conocernos y plantear objetivo, luego continuaremos viéndonos de forma virtual para llevar a cabo la propuesta nutricional y su seguimiento en el tiempo.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Pregunta 6 */}
-              <div className="border-b border-gray-200">
+          {/*     <div className="border-b border-gray-200">
                 <button 
                   onClick={() => handleFaqToggle(6)}
                   className="w-full py-6 px-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
@@ -751,7 +749,7 @@ const Home: React.FC = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -803,7 +801,13 @@ const Home: React.FC = () => {
               <ul className="space-y-2 text-gray-400">
                 <li>WhatsApp: 2235121205</li>
                 <li>Email: maria@nutricion.com</li>
-                <li>Horarios: Lun-Vie 9-18hs</li>
+                <li>Horarios:</li>
+                <li>Presencial: 10:00 - 16:00</li>
+                <li>Virtual: A coordinar</li>
+         {/*        <li>  <div className="flex flex-wrap gap-2 mt-1">
+    <span className="inline-flex items-center text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Presencial: 10:00 - 16:00</span>
+    <span className="inline-flex items-center bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Virtual: A coordinar</span>
+  </div></li> */}
               </ul>
             </div>
             <div>

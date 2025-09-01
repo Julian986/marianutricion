@@ -1,5 +1,45 @@
 # React + TypeScript + Vite
 
+ Aspectos a mejorar Dados por Maria 12/8 y 1/9
+
+
+
+- La imagen de abordaje nutricional no le gusta. 1/9
+- Logo de Estelar
+   A la espera del chico que todavia no termino su trabajo!
+- Chequear la calidad de imagen del logo de la pagina
+- Chequear detalles, testear
+
+- Hay que cambiar la ubicacion de maps. A la que fui yo la ultima reunion ✅
+
+- Cambiar el horario de atencion.
+    Horarios de atencion✅
+    Presencial 
+    10 - 16
+
+    Virtual
+    A coordinar
+
+- Con lo que puse respecto a Estelar
+ . En vez de mezclas quiere que diga blend✅ 
+  
+
+- Preguntas frecuentes
+    Tiene que responder ella ?✅
+
+
+
+
+
+
+
+
+
+
+
+
+Completado.
+
  Aspectos a mejorar Dados por Maria
 
 - Seccion "Mis Servicios"
