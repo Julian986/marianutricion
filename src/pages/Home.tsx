@@ -200,12 +200,12 @@ const Home: React.FC = () => {
         <div className={`mobile-menu fixed top-0 left-0 w-full h-full z-40 transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`} style={{ backgroundColor: '#f3fef6' }}>
           <div className="flex flex-col h-full pt-24 px-8">
             {/* Menú móvil */}
-            <ul className="space-y-6 text-gray-700 font-semibold text-xl text-center">
+            <ul className="space-y-6 text-gray-700 font-semibold text-xl">
               <li onClick={() => scrollToSection('hero')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Inicio</li>
               <li onClick={() => scrollToSection('about')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Sobre mí</li>
               <li onClick={() => scrollToSection('services')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Servicios</li>
               <li onClick={() => scrollToSection('contact')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Contacto</li>
-            </ul>
+            </ul> 
           </div>
         </div>
 
@@ -215,7 +215,7 @@ const Home: React.FC = () => {
           <div className="md:w-1/2 w-full flex flex-col items-start justify-center mb-12 md:mb-0">
             <span id="badge" className="animate-on-scroll bg-green-100 text-green-700 font-semibold px-4 py-2 rounded mb-6 text-sm tracking-wide hidden md:block">Lic. Maria Victoria Paravizini</span>
             <h1 id="title" className="animate-on-scroll text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">Nutrición Integral</h1>
-            <p id="description" className="animate-on-scroll text-lg text-gray-600 mb-8 max-w-xl"> Te acompaño a optimizar tu salud a través de la alimentación consciente.
+            <p id="description" className="animate-on-scroll text-xl text-gray-600 mb-8 max-w-xl"> Te acompaño a optimizar tu salud a través de la alimentación consciente.
               </p>
             <a href="https://wa.me/5492235121205" target="_blank" rel="noopener noreferrer">
               <button id="cta-button" className="animate-on-scroll bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold px-10 py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto transform hover:scale-105 cursor-pointer">
@@ -520,7 +520,7 @@ const Home: React.FC = () => {
               {/* Información de ubicación */}
               <div className="space-y-6">
                 {/* Tarjeta principal */}
-                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 wide-card">
                   <div className="flex items-start gap-4 mb-8">
                     <svg className="w-8 h-8 text-gray-900 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
@@ -585,7 +585,7 @@ const Home: React.FC = () => {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
-                    Ver ubicación en Google Maps
+                    Ver ubicación en <br /> Google Maps
                   </a>
                 </div>
               </div>

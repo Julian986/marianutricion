@@ -221,3 +221,16 @@ body.menu-open {
 }
 
 
+/* Ancho extendido para la tarjeta de ubicación en móviles/tablet */
+.wide-card {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+@media (min-width: 768px) {
+  .wide-card {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
