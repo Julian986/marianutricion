@@ -248,7 +248,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Grid de servicios */}
-            <div id="services-grid" className="animate-on-scroll grid md:grid-cols-3 gap-8">
+            <div id="services-grid" className="grid md:grid-cols-3 gap-8">
               {/* Servicio 1 - Planes Personalizados */}
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
                 <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
@@ -256,6 +256,7 @@ const Home: React.FC = () => {
                     src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957715/consultas_bnfmty.webp" 
                     alt="Planes de nutrición personalizados" 
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 {/*   <div className="absolute top-4 left-4">
@@ -299,6 +300,7 @@ const Home: React.FC = () => {
                     src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957717/frutas_secas_fondo_ovqyee.webp" 
                     alt="Nutricion Consciente" 
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute top-4 left-4">
@@ -342,6 +344,7 @@ const Home: React.FC = () => {
                     src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754956846/Plantes-medicinals_hoyaha.webp" 
                     alt="Estelar - Blends de hierbas medicinales" 
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               {/*     <div className="absolute top-4 left-4">
@@ -381,13 +384,13 @@ const Home: React.FC = () => {
         {/* Sección Sobre Mí */}
         <section id="about" className="py-20" style={{ backgroundColor: '#f3fef6' }}>
           <div className="max-w-7xl mx-auto px-8">
-            <div id="about-content" className="animate-on-scroll grid md:grid-cols-2 gap-16 items-center">
+            <div id="about-content" className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre Mí</h2>
-                <p className="text-lg text-gray-600 mb-6">
+                <h2 className="animate-on-scroll text-4xl font-bold text-gray-900 mb-6">Sobre Mí</h2>
+                <p className="animate-on-scroll text-lg text-gray-600 mb-6">
                   Soy Licenciada en Nutrición con más de 10 años de experiencia ayudando a personas a transformar su vida a través de la alimentación consciente.
                 </p>
-                <p className="text-lg text-gray-600 mb-8">
+                <p className="animate-on-scroll text-lg text-gray-600 mb-8">
                   Mi enfoque se basa en la ciencia de la nutrición combinada con un trato humano y empático. Creo que cada persona es única, por eso diseño planes personalizados que se adaptan a tu estilo de vida y objetivos.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
@@ -424,9 +427,9 @@ const Home: React.FC = () => {
         {/* Sección de Testimonios */}
         <section className="py-20 md:rounded-none rounded-3xl mx-4 md:mx-0">
           <div className="max-w-7xl mx-auto px-8">
-            <div id="testimonials-header" className="animate-on-scroll text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Lo que dicen mis consultantes</h2>
-              <p className="text-xl text-gray-600">Experiencias reales de personas que transformaron su vida a través de la nutrición consciente</p>
+            <div id="testimonials-header" className="text-center mb-16">
+              <h2 className="animate-on-scroll text-4xl font-bold text-gray-900 mb-4">Lo que dicen mis consultantes</h2>
+              <p className="animate-on-scroll text-xl text-gray-600">Experiencias reales de personas que transformaron su vida a través de la nutrición consciente</p>
             </div>
             
             {/* Carrusel de testimonios */}
@@ -511,9 +514,9 @@ const Home: React.FC = () => {
         {/* Sección de Ubicación */}
         <section className="py-20" style={{ backgroundColor: '#f3fef6' }}>
           <div className="max-w-7xl mx-auto px-8">
-            <div id="location-header" className="animate-on-scroll text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Encuéntrame aquí</h2>
-              <p className="text-xl text-gray-600">Visita mi consultorio para una atención personalizada y profesional</p>
+            <div id="location-header" className="text-center mb-16">
+              <h2 className="animate-on-scroll text-4xl font-bold text-gray-900 mb-4">Encuéntrame aquí</h2>
+              <p className="animate-on-scroll text-xl text-gray-600">Visita mi consultorio para una atención personalizada y profesional</p>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -620,9 +623,9 @@ const Home: React.FC = () => {
         {/* Sección de Preguntas Frecuentes */}
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-8">
-            <div id="faq-header" className="animate-on-scroll text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
-              <p className="text-xl text-gray-600">Resolvemos las dudas más comunes sobre nuestros servicios</p>
+            <div id="faq-header" className="text-center mb-16">
+              <h2 className="animate-on-scroll text-4xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
+              <p className="animate-on-scroll text-xl text-gray-600">Resolvemos las dudas más comunes sobre nuestros servicios</p>
             </div>
             
             <div className="space-y-4">
