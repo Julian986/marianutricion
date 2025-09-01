@@ -297,7 +297,8 @@ const Home: React.FC = () => {
               >
                 <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
                   <img 
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957717/frutas_secas_fondo_ovqyee.webp" 
+                    /* src="https://www.duasrodas.com/blog/wp-content/uploads/2021/04/alimentacao-consciente-intuitiva-602x602-1.jpg" */ 
+                    src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/alimentacao-consciente-intuitiva-602x602-1_q7cslt.webp'
                     alt="Nutricion Consciente" 
                     className="w-full h-full object-cover"
                     loading="eager"
@@ -341,7 +342,8 @@ const Home: React.FC = () => {
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
                 <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
                   <img 
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754956846/Plantes-medicinals_hoyaha.webp" 
+                    /* src="https://www.lanacion.com.ar/resizer/v2/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ.jpg?auth=c0439ac7d795e4412bfde3afec68d73e46b0d629f20e0b72bfc03b9ed045efd0&width=420&height=280&quality=70&smart=true" */ 
+                    src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ_mnvm1a.webp'
                     alt="Estelar - Blends de hierbas medicinales" 
                     className="w-full h-full object-cover"
                     loading="eager"
