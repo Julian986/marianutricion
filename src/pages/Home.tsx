@@ -200,7 +200,7 @@ const Home: React.FC = () => {
         <div className={`mobile-menu fixed top-0 left-0 w-full h-full z-40 transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`} style={{ backgroundColor: '#f3fef6' }}>
           <div className="flex flex-col h-full pt-24 px-8">
             {/* Menú móvil */}
-            <ul className="space-y-6 text-gray-700 font-semibold text-xl">
+            <ul className="space-y-6 text-gray-700 font-semibold text-xl text-center">
               <li onClick={() => scrollToSection('hero')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Inicio</li>
               <li onClick={() => scrollToSection('about')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Sobre mí</li>
               <li onClick={() => scrollToSection('services')} className="hover:text-green-600 cursor-pointer transition-colors duration-200 py-2 border-b border-gray-100">Servicios</li>
@@ -215,7 +215,7 @@ const Home: React.FC = () => {
           <div className="md:w-1/2 w-full flex flex-col items-start justify-center mb-12 md:mb-0">
             <span id="badge" className="animate-on-scroll bg-green-100 text-green-700 font-semibold px-4 py-2 rounded mb-6 text-sm tracking-wide hidden md:block">Lic. Maria Victoria Paravizini</span>
             <h1 id="title" className="animate-on-scroll text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">Nutrición Integral</h1>
-            <p id="description" className="animate-on-scroll text-lg text-gray-600 mb-8 max-w-xl"> 𝚃𝚎 𝚊𝚌𝚘𝚖p𝚊ñ𝚘 𝚊 𝚘𝚙𝚝𝚒𝚖𝚒𝚣𝚊𝚛 𝚝𝚞 𝚜𝚊𝚕𝚞𝚍 𝚊 𝚝𝚛𝚊𝚟é𝚜 𝚍𝚎 𝚕𝚊 𝚊𝚕𝚒𝚖𝚎𝚗𝚝𝚊𝚌𝚒ó𝚗 𝚌𝚘𝚗𝚜𝚌𝚒𝚎𝚗𝚝𝚎.
+            <p id="description" className="animate-on-scroll text-lg text-gray-600 mb-8 max-w-xl"> Te acompaño a optimizar tu salud a través de la alimentación consciente.
               </p>
             <a href="https://wa.me/5492235121205" target="_blank" rel="noopener noreferrer">
               <button id="cta-button" className="animate-on-scroll bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold px-10 py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto transform hover:scale-105 cursor-pointer">
