@@ -321,7 +321,7 @@ const Home: React.FC = () => {
                     <span className="text-gray-300">•</span>
                     <span className="text-sm text-gray-500">Flexible</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Nutricion Consciente</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Nutrición Consciente</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     Visitá mi Instagram Nutrición Consciente para contenidos, tips, recetas y novedades. También podés
                     reservar tu turno por mensaje directo.
