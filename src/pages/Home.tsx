@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// Nota: para imágenes en public, usar rutas absolutas desde la raíz (e.g., "/consultas.png").
 
 
 const Home: React.FC = () => {
@@ -155,7 +154,7 @@ const Home: React.FC = () => {
   };
 
   // Alto fijo para contenedores de imágenes de servicios (ajustable en un solo lugar)
-  const serviceImageHeightPx = 250;
+  // const serviceImageHeightPx = 250;
 
   return (
     <>
@@ -251,11 +250,12 @@ const Home: React.FC = () => {
             <div id="services-grid" className="grid md:grid-cols-3 gap-8">
               {/* Servicio 1 - Planes Personalizados */}
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
-                <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
+                <div className="relative overflow-hidden">
                   <img 
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957715/consultas_bnfmty.webp" 
+                    /* src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957715/consultas_bnfmty.webp" */ 
+                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364772/consultas1a1_ruwuum.webp"
                     alt="Planes de nutrición personalizados" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -275,8 +275,7 @@ const Home: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Consultas 1:1 <br /> Presencial y virtual</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    Primera consulta con evaluación integral (historia clínica y hábitos), definición de objetivos y plan de
-                    alimentación personalizado. Seguimiento y ajustes periódicos, en modalidad presencial u online.
+                    Primera consulta con evaluación integral (historia clínica y hábitos), definición de objetivos y guía alimentaria. Seguimiento y ajustes periódicos, en modalidad presencial u online.
                   </p>
                   <div className="flex items-center justify-between">
                     {/* <span className="text-green-600 font-semibold text-sm">Desde $150/mes</span> */}
@@ -295,12 +294,13 @@ const Home: React.FC = () => {
                 className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 cursor-pointer"
                 onClick={() => window.open('https://www.instagram.com/nutricionconsciente.ar?igshid=YmMyMTA2M2Y%3D', '_blank', 'noopener,noreferrer')}
               >
-                <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
+                <div className="relative overflow-hidden">
                   <img 
                     /* src="https://www.duasrodas.com/blog/wp-content/uploads/2021/04/alimentacao-consciente-intuitiva-602x602-1.jpg" */ 
-                    src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/alimentacao-consciente-intuitiva-602x602-1_q7cslt.webp'
+                    /* src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/alimentacao-consciente-intuitiva-602x602-1_q7cslt.webp' */
+                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364772/huevos_vwoeig.webp"
                     alt="Nutricion Consciente" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -311,7 +311,7 @@ const Home: React.FC = () => {
                         <circle cx="12" cy="12" r="5" stroke="currentColor" />
                         <circle cx="17" cy="7" r="1.2" fill="currentColor" />
                       </svg>
-                      <span className="text-sm font-medium text-gray-800">@nutricionconsciente.ar</span>
+                      <span className="text-sm font-medium text-gray-800">mvparavizini@gmail.com</span>
                     </div>
                   </div>
                 </div>
@@ -340,12 +340,13 @@ const Home: React.FC = () => {
 
               {/* Servicio 3 - Educación Nutricional */}
               <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
-                <div className="relative overflow-hidden" style={{ height: `${serviceImageHeightPx}px` }}>
+                <div className="relative overflow-hidden">
                   <img 
                     /* src="https://www.lanacion.com.ar/resizer/v2/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ.jpg?auth=c0439ac7d795e4412bfde3afec68d73e46b0d629f20e0b72bfc03b9ed045efd0&width=420&height=280&quality=70&smart=true" */ 
-                    src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ_mnvm1a.webp'
+                    //src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ_mnvm1a.webp'
+                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364773/estelar_xrciz9.webp"
                     alt="Estelar - Blends de hierbas medicinales" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -393,7 +394,7 @@ const Home: React.FC = () => {
                   Soy Licenciada en Nutrición con más de 10 años de experiencia ayudando a personas a transformar su vida a través de la alimentación consciente.
                 </p>
                 <p className="animate-on-scroll text-lg text-gray-600 mb-8">
-                  Mi enfoque se basa en la ciencia de la nutrición combinada con un trato humano y empático. Creo que cada persona es única, por eso diseño planes personalizados que se adaptan a tu estilo de vida y objetivos.
+                La profesión me atraviesa como educadora. El eje de mi trabajo en consulta es la nutrición consciente y a partir de esa premisa abordaremos el objetivo que se quiera llevar a cabo a través de un enfoque integral del ser humano. Por eso no solo trabajaremos la alimentación si no que todos aquellos hábitos que son necesarios para lograr un estado de salud óptimo. Te espero en consulta para trabajar juntos tu bienestar integral.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
@@ -575,7 +576,7 @@ const Home: React.FC = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">Email</h4>
-                        <p className="text-gray-600">maria@nutricion.com</p>
+                        <p className="text-gray-600">mvparavizini@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -765,7 +766,7 @@ const Home: React.FC = () => {
         <section id="contact" className="py-20" style={{ backgroundColor: '#f3fef6' }}>
           <div id="contact-content" className="animate-on-scroll max-w-4xl mx-auto px-8 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">¿Listo para empezar tu transformación?</h2>
-            <p className="text-xl text-gray-600 mb-8">Agenda tu consulta gratuita y descubre cómo podemos trabajar juntos para alcanzar tus objetivos de salud</p>
+            <p className="text-xl text-gray-600 mb-8">Agenda tu consulta y descubre cómo podemos trabajar juntos para alcanzar tus objetivos de salud</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://wa.me/5492235121205" target="_blank" rel="noopener noreferrer">
                 <button className="bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 justify-center transform hover:scale-105">
@@ -807,7 +808,7 @@ const Home: React.FC = () => {
               <h4 className="font-semibold mb-4">Contacto</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>WhatsApp: 2235121205</li>
-                <li>Email: maria@nutricion.com</li>
+                <li>Email: mvparavizini@gmail.com</li>
                 <li>Horarios:</li>
                 <li>Presencial: 10:00 - 16:00</li>
                 <li>Virtual: A coordinar</li>
