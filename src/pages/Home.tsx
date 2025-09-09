@@ -241,7 +241,7 @@ const Home: React.FC = () => {
             <div id="services-header" className="animate-on-scroll text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Mis Servicios</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Consulta presencial en la ciudad de Mar del Plata o Virtual para cualquier lugar del mundo. Abordaremos la nutricion con un enfoque integral del ser humano, haciendo hincapié en una alimentación en base a alimentos reales y de manera consciente. Encontraremos la alimentación que se adecue a vos, que cumpla con tus objetivos y que optimice tu biología
+              Consulta presencial en la ciudad de Mar del Plata o Virtual para cualquier lugar del mundo. Abordaremos la nutrición con un enfoque integral del ser humano, haciendo hincapié en una alimentación en base a alimentos reales y de manera consciente. Encontraremos la alimentación que se adecue a vos, que cumpla con tus objetivos y que optimice tu biología
               ¡Nos vemos en consulta!
               </p>
             </div>

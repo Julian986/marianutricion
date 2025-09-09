@@ -1,5 +1,15 @@
 # React + TypeScript + Vite
 
+ Aspectos a mejorar Dados por Maria 12/8
+
+
+
+
+
+
+
+
+ 
  Aspectos a mejorar Dados por Maria 12/8 y 1/9
 
 
