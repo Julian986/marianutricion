@@ -1,14 +1,13 @@
 # React + TypeScript + Vite
 
+12/9 . Temitas que podriamos mejorar de la web:
+     - Flechas de testimonios
+     - Preguntas frecuentes
+
+12/9 - Mejoramos el SEO
+
+
  Aspectos a mejorar Dados por Maria 12/8
-
-
-
-
-
-
-
-
  
  Aspectos a mejorar Dados por Maria 12/8 y 1/9
 

@@ -161,7 +161,8 @@ const Home: React.FC = () => {
       {/* Contenido principal */}
       <div className="min-h-screen" style={{ backgroundColor: '#f3fef6' }}>
         {/* Barra superior */}
-        <nav className="fixed top-0 left-0 w-screen flex items-center justify-between px-8 md:px-16 py-7 z-50" style={{ backgroundColor: '#f3fef6' }}>
+        <header>
+          <nav className="fixed top-0 left-0 w-screen flex items-center justify-between px-8 md:px-16 py-7 z-50" style={{ backgroundColor: '#f3fef6' }}>
           {/* Logo */}
           <div className="flex items-center gap-2">
             <span className="font-bold text-2xl text-gray-700 tracking-tight">Maria Victoria Paravizini</span>
@@ -193,7 +194,8 @@ const Home: React.FC = () => {
             <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
             <span className={`block w-6 h-0.5 bg-gray-700 transition-all duration-300 ${mobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
           </button>
-        </nav>
+          </nav>
+        </header>
         
         {/* Menú móvil */}
         <div className={`mobile-menu fixed top-0 left-0 w-full h-full z-40 transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`} style={{ backgroundColor: '#f3fef6' }}>
@@ -230,12 +232,12 @@ const Home: React.FC = () => {
             {/* Imagen borrosa de fondo */}
             {/* <img src="/María imagen perfil.png" alt="Fondo borroso María" className="absolute z-0 w-[420px] h-[420px] md:w-[520px] md:h-[520px] object-cover blur-2xl scale-110 opacity-40" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', position: 'absolute' }} /> */}
             {/* Imagen nítida de María delante */}
-            <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp" alt="Nutricionista María" className="relative z-1 w-72 h-72 md:w-96 md:h-96 rounded-3xl object-cover shadow-md " />
+            <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp" alt="María Victoria Paravizini, nutricionista profesional en Mar del Plata especializada en nutrición consciente y planes personalizados" className="relative z-1 w-72 h-72 md:w-96 md:h-96 rounded-3xl object-cover shadow-md" loading="eager" fetchPriority="high" />
           </div>
         </main>
 
         {/* Sección de Servicios */}
-        <section id="services" className="py-20">
+        <section id="services" className="py-20" aria-label="Servicios de nutrición">
           <div className="max-w-7xl mx-auto px-8">
             {/* Header de la sección */}
             <div id="services-header" className="animate-on-scroll text-center mb-16">
@@ -249,14 +251,14 @@ const Home: React.FC = () => {
             {/* Grid de servicios */}
             <div id="services-grid" className="grid md:grid-cols-3 gap-8">
               {/* Servicio 1 - Planes Personalizados */}
-              <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
+              <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100" itemScope itemType="https://schema.org/Service">
                 <div className="relative overflow-hidden">
                   <img 
                     /* src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1754957715/consultas_bnfmty.webp" */ 
                     src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364772/consultas1a1_ruwuum.webp"
-                    alt="Planes de nutrición personalizados" 
+                    alt="Consultas nutricionales personalizadas 1 a 1 con María Victoria Paravizini - Evaluación integral y planes alimentarios adaptados" 
                     className="w-full h-auto"
-                    loading="eager"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 {/*   <div className="absolute top-4 left-4">
@@ -273,8 +275,8 @@ const Home: React.FC = () => {
                     <span className="text-gray-300">•</span>
                     <span className="text-sm text-gray-500">Personalizado</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Consultas 1:1 <br /> Presencial y virtual</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3" itemProp="name">Consultas 1:1 <br /> Presencial y virtual</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4" itemProp="description">
                     Primera consulta con evaluación integral (historia clínica y hábitos), definición de objetivos y guía alimentaria. Seguimiento y ajustes periódicos, en modalidad presencial u online.
                   </p>
                   <div className="flex items-center justify-between">
@@ -299,9 +301,9 @@ const Home: React.FC = () => {
                     /* src="https://www.duasrodas.com/blog/wp-content/uploads/2021/04/alimentacao-consciente-intuitiva-602x602-1.jpg" */ 
                     /* src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/alimentacao-consciente-intuitiva-602x602-1_q7cslt.webp' */
                     src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364772/huevos_vwoeig.webp"
-                    alt="Nutricion Consciente" 
+                    alt="Nutrición Consciente - Instagram educativo con tips, recetas saludables y contenido nutricional por María Victoria Paravizini" 
                     className="w-full h-auto"
-                    loading="eager"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute top-4 left-4">
@@ -345,9 +347,9 @@ const Home: React.FC = () => {
                     /* src="https://www.lanacion.com.ar/resizer/v2/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ.jpg?auth=c0439ac7d795e4412bfde3afec68d73e46b0d629f20e0b72bfc03b9ed045efd0&width=420&height=280&quality=70&smart=true" */ 
                     //src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ_mnvm1a.webp'
                     src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364773/estelar_xrciz9.webp"
-                    alt="Estelar - Blends de hierbas medicinales" 
+                    alt="Estelar - Blends de hierbas medicinales artesanales para infusionar, creados por María Victoria Paravizini para el bienestar natural" 
                     className="w-full h-auto"
-                    loading="eager"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               {/*     <div className="absolute top-4 left-4">
@@ -385,7 +387,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Sección Sobre Mí */}
-        <section id="about" className="py-20" style={{ backgroundColor: '#f3fef6' }}>
+        <section id="about" className="py-20" style={{ backgroundColor: '#f3fef6' }} itemScope itemType="https://schema.org/AboutPage">
           <div className="max-w-7xl mx-auto px-8">
             <div id="about-content" className="grid md:grid-cols-2 gap-16 items-center">
               <div>
@@ -408,7 +410,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <div className="relative">
-                <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711318/sala-de-espera-borrosa_nfqh6h.webp" alt="Consultorio" className="rounded-2xl shadow-2xl" />
+                <img src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1753711318/sala-de-espera-borrosa_nfqh6h.webp" alt="Consultorio de María Victoria Paravizini en Mar del Plata - Ambiente profesional y acogedor para consultas nutricionales" className="rounded-2xl shadow-2xl" loading="lazy" />
                 <div className="absolute -bottom-6 -left-6 rounded-xl p-6 shadow-lg" style={{ backgroundColor: '#f3fef6' }}>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
@@ -428,7 +430,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Sección de Testimonios */}
-        <section className="py-20 md:rounded-none rounded-3xl mx-4 md:mx-0">
+        <section className="py-20 md:rounded-none rounded-3xl mx-4 md:mx-0" itemScope itemType="https://schema.org/Review">
           <div className="max-w-7xl mx-auto px-8">
             <div id="testimonials-header" className="text-center mb-16">
               <h2 className="animate-on-scroll text-4xl font-bold text-gray-900 mb-4">Lo que dicen mis consultantes</h2>
@@ -476,8 +478,9 @@ const Home: React.FC = () => {
                     <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
                       <img 
                         src={testimonial.image} 
-                        alt={testimonial.name} 
+                        alt={`Testimonio de ${testimonial.name} sobre los servicios de nutrición de María Victoria Paravizini`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
                       />
                     </div>
                     <h3 className="font-bold text-gray-900 text-lg mb-1">{testimonial.name}</h3>
