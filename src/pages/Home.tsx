@@ -340,48 +340,60 @@ const Home: React.FC = () => {
                 </div>
               </article>
 
-              {/* Servicio 3 - Educación Nutricional */}
-              <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
-                <div className="relative overflow-hidden">
-                  <img 
-                    /* src="https://www.lanacion.com.ar/resizer/v2/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ.jpg?auth=c0439ac7d795e4412bfde3afec68d73e46b0d629f20e0b72bfc03b9ed045efd0&width=420&height=280&quality=70&smart=true" */ 
-                    //src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ_mnvm1a.webp'
-                    src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364773/estelar_xrciz9.webp"
-                    alt="Estelar - Blends de hierbas medicinales artesanales para infusionar, creados por María Victoria Paravizini para el bienestar natural" 
-                    className="w-full h-auto"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              {/*     <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                      </svg>
+              {/* Servicio 3 - Estelar Blends */}
+              <a href="https://www.instagram.com/estelarblend?igsh=azRhc3p2MTJ0MTRk" target="_blank" rel="noopener noreferrer" className="block">
+                <article className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 cursor-pointer">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      /* src="https://www.lanacion.com.ar/resizer/v2/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ.jpg?auth=c0439ac7d795e4412bfde3afec68d73e46b0d629f20e0b72bfc03b9ed045efd0&width=420&height=280&quality=70&smart=true" */ 
+                      //src='https://res.cloudinary.com/dzoupwn0e/image/upload/v1756756532/de-acuerdo-con-la-organizacion-mundial-de-la-TOTNSRS6ZFGW5GET6G4OKSMOLQ_mnvm1a.webp'
+                      src="https://res.cloudinary.com/dzoupwn0e/image/upload/v1757364773/estelar_xrciz9.webp"
+                      alt="Estelar - Blends de hierbas medicinales artesanales para infusionar, creados por María Victoria Paravizini para el bienestar natural" 
+                      className="w-full h-auto"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    {/* Instagram icon overlay */}
+                    <div className="absolute top-4 right-4">
+                      <div className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                          <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" />
+                          <circle cx="12" cy="12" r="5" stroke="currentColor" />
+                          <circle cx="17" cy="7" r="1.2" fill="currentColor" />
+                        </svg>
+                      </div>
                     </div>
-                  </div> */}
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-sm text-gray-500">Sensorial</span>
-                    <span className="text-gray-300">•</span>
-                    <span className="text-sm text-gray-500">Bienestar</span>
+              {/*     <div className="absolute top-4 left-4">
+                      <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                      </div>
+                    </div> */}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Estelar</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    Blends de hierbas medicinales para infusionar, creados para acompañar tu bienestar de forma natural.
-                    Próximamente tienda online. Consultá por disponibilidad.
-                  </p>
-                  <div className="flex items-center justify-between">
-                   {/*  <span className="text-purple-600 font-semibold text-sm">Desde $120/mes</span> */}
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
-                      <span>María Victoria</span>
-                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
-                        <span className="text-xs font-semibold text-purple-600">MV</span>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-sm text-gray-500">Sensorial</span>
+                      <span className="text-gray-300">•</span>
+                      <span className="text-sm text-gray-500">Bienestar</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">Estelar</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                      Blends de hierbas medicinales para infusionar, creados para acompañar tu bienestar de forma natural.
+                      Próximamente tienda online. Consultá por disponibilidad.
+                    </p>
+                    <div className="flex items-center justify-between">
+                     {/*  <span className="text-purple-600 font-semibold text-sm">Desde $120/mes</span> */}
+                      <div className="flex items-center gap-2 text-sm text-gray-500">
+                        <span>María Victoria</span>
+                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
+                          <span className="text-xs font-semibold text-purple-600">MV</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </a>
             </div>
           </div>
         </section>
@@ -829,7 +841,14 @@ const Home: React.FC = () => {
                     <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.63A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.68-.5-5.26-1.44l-.38-.22-3.69.97.99-3.59-.25-.37A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.47-7.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.5-.5-.67-.5-.17 0-.37-.02-.57-.02-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.9 1.23 3.1.15.2 2.13 3.25 5.17 4.42.72.25 1.28.4 1.72.52.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"/>
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/nutricionconsciente.ar?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
+                <a href="https://www.instagram.com/nutricionconsciente.ar?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition" aria-label="Instagram Nutrición">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                    <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" />
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" />
+                    <circle cx="17" cy="7" r="1.2" fill="currentColor" />
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/estelarblend?igsh=azRhc3p2MTJ0MTRk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition" aria-label="Instagram Estelar Blends">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                     <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" />
                     <circle cx="12" cy="12" r="5" stroke="currentColor" />
