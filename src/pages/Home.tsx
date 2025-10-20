@@ -56,6 +56,13 @@ const Home: React.FC = () => {
 
   const testimonials = [
     {
+      id: 5,
+      name: "Lucia Carruego",
+      title: "Hace un mes",
+      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1760969853/unnamed_20_y5woxn.webp",
+      testimonial: "Excelente profesional! Agradezco la calidez humana en el trato, para transitar los cambios que necesito.  Recomiendo"
+    },
+    {
       id: 1,
       name: "Daniela Kittlein",
       title: "Hace 4 años",
@@ -68,12 +75,6 @@ const Home: React.FC = () => {
       title: "Hace 4 años",
       image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913036/unnamed_1_lxxjs1.webp",
       testimonial: "Excelente profesional.! Muy cálida, alcance grandes objetivos.!! La recomiendo 100%."
-    },
-    {
-      id: 5,
-      name: "Oscar",
-      title: "Hace 4 años",
-      image: "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753913039/unnamed_4_ook4s3.webp",
     },
     {
       id: 3,
