@@ -1,10 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "framework": "vite",
-  "cleanUrls": true,
-  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -37,7 +31,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(js|css|woff2?|eot|ttf|otf))",
+      "source": "/(.*\\.(js|css|woff2|woff|eot|ttf|otf))",
       "headers": [
         {
           "key": "Cache-Control",
