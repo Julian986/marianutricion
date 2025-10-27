@@ -1,0 +1,22 @@
+{
+  "name": "María Victoria Paravizini - Nutricionista",
+  "short_name": "María Nutrición",
+  "description": "Licenciada en Nutrición en Mar del Plata. Consultas presenciales y virtuales. Nutrición consciente y planes personalizados.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753066/logo_zad7ls.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753066/logo_zad7ls.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
+

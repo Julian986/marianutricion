@@ -624,7 +624,7 @@ const Home: React.FC = () => {
                       height="500" 
                       style={{ border: 0 }} 
                       allowFullScreen 
-                      loading="lazy" 
+                      loading="eager" 
                       referrerPolicy="no-referrer-when-downgrade"
                       className="w-full h-[500px]"
                     ></iframe>
