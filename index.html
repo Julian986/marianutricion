@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-64DYKHP9Y0"></script>
@@ -55,46 +55,71 @@
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://res.cloudinary.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
     <link rel="preconnect" href="https://wa.me" />
     
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "María Victoria Paravizini",
-      "jobTitle": "Licenciada en Nutrición",
-      "description": "Nutricionista con más de 10 años de experiencia especializada en nutrición consciente y planes personalizados",
-      "url": "https://marianutricion.com",
-      "image": "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp",
-      "telephone": "+5492235121205",
-      "email": "mvparavizini@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mar del Plata",
-        "addressRegion": "Buenos Aires",
-        "addressCountry": "AR"
-      },
-      "sameAs": [
-        "https://www.instagram.com/nutricionconsciente.ar",
-        "https://www.instagram.com/estelarblend"
-      ],
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Nutricionista",
-        "occupationLocation": {
-          "@type": "City",
-          "name": "Mar del Plata"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://marianutricion.com/#maria",
+          "name": "María Victoria Paravizini",
+          "jobTitle": "Licenciada en Nutrición",
+          "description": "Nutricionista con más de 10 años de experiencia en nutrición consciente, planes personalizados y educación nutricional.",
+          "url": "https://marianutricion.com/",
+          "image": "https://res.cloudinary.com/dzoupwn0e/image/upload/v1753753067/imagen_de_perfil_ywyvxg.webp",
+          "telephone": "+54 9 223 512-1205",
+          "email": "mvparavizini@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mar del Plata",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+          },
+          "sameAs": [
+            "https://www.instagram.com/nutricionconsciente.ar",
+            "https://www.instagram.com/estelarblend"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://marianutricion.com/#consultorio",
+          "name": "María Nutrición",
+          "url": "https://marianutricion.com/",
+          "description": "Consultas nutricionales presenciales y virtuales en Mar del Plata.",
+          "founder": {
+            "@id": "https://marianutricion.com/#maria"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Mar del Plata"
+            },
+            {
+              "@type": "Country",
+              "name": "Argentina"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "10:00",
+              "closes": "16:00"
+            }
+          ]
         }
-      },
-      "offers": {
-        "@type": "Offer",
-        "description": "Consultas nutricionales presenciales y virtuales",
-        "areaServed": {
-          "@type": "Country",
-          "name": "Argentina"
-        }
-      }
+      ]
     }
     </script>
   </head>
