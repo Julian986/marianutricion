@@ -14,7 +14,10 @@ export const pageview = (url: string) => {
   });
 };
 
-export const event = (action: string, params?: Record<string, string>) => {
+export const event = (
+  action: string,
+  params?: Record<string, string | number | boolean>,
+) => {
   if (typeof window.gtag !== 'function') return;
   window.gtag('event', action, params);
 };
